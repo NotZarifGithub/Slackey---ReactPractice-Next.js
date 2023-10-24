@@ -6,7 +6,7 @@ const MainTitle = ({mainTitle, title}) => {
       <div>
 
         {/* title */}
-        <div className='flex flex-col p-[10px] capitalize'>
+        <div className='flex flex-col pt-[20px] capitalize'>
 
           <div>
             <h2 className='font-medium text-black/60'>
