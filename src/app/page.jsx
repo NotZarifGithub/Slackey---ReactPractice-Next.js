@@ -16,17 +16,17 @@ export default function Home() {
   
   return (
     <main>
-      <div className="flex items-center justify-between h-screen text-white bg-black ">
+      <div className="flex justify-center text-white bg-black gap-4 py-[10px]">
 
         {/* sections */}
-        <button className="transform -rotate-90" onClick={() => setIsSectionOpen(!isSectionOpen)}>
+        <button className=" rounded-lg px-[10px] hover:bg-white hover:text-black" onClick={() => setIsSectionOpen(!isSectionOpen)}>
           <h1 className={`${slackey.className} uppercase`}>
             sections
           </h1>
 
           {/* sections dropdown */}
           {isSectionOpen && (
-            <div className="absolute flex flex-col transform rotate-90 top-[100px]">
+            <div className=" flex flex-col top-[100px]">
               <ul className="text-black capitalize bg-white rounded-lg p-[10px] flex flex-col gap-1 w-[150px]">
                 <Link href={'/sections/FAQ'}>
                   <li className="text-base font-semibold hover:bg-black hover:text-white px-[10px] rounded-lg">
@@ -49,26 +49,26 @@ export default function Home() {
         </button>
 
         {/* components */}
-        <button className="transform rotate-90" onClick={() => setIsComponentOpen(!isComponentOpen)}>
+        <button className=" rounded-lg p-[10px] hover:bg-white hover:text-black" onClick={() => setIsComponentOpen(!isComponentOpen)}>
           <h1 className={`${slackey.className} uppercase`}>
             components
           </h1>
 
           {/* components dropdown */}
           {isComponentOpen && (
-            <div className="absolute flex flex-col transform -rotate-90 top-[100px]">
+            <div className=" flex flex-col top-[100px]">
               <ul className="text-black capitalize bg-white rounded-lg p-[10px] flex flex-col gap-1 w-[150px]">
-                <Link href={'/sections/accordions'}>
+                <Link href={'/component/accordions'}>
                   <li className="text-base font-semibold hover:bg-black hover:text-white px-[10px] rounded-lg">
                     accordions
                   </li>
                 </Link>
-                <Link href={'/sections/buttons'}>
+                <Link href={'/component/buttons'}>
                   <li className="text-base font-semibold hover:bg-black hover:text-white px-[10px] rounded-lg">
                     buttons
                   </li>
                 </Link>
-                <Link href={'/sections/navbar'}>
+                <Link href={'/component/navbar'}>
                   <li className="text-base font-semibold hover:bg-black hover:text-white px-[10px] rounded-lg">
                     navbar
                   </li>
