@@ -61,34 +61,50 @@ const HamburgerNavigation = () => {
               >
                 <AiOutlineClose />
               </motion.button>
-              <ul className="text-2xl uppercase">
+              <ul className="flex flex-col gap-2 text-2xl uppercase">
 
                 {/* home */}
                 <Link href={'/'}>
-                  <h1>
+                  <motion.h1
+                    className="rounded-xl w-[120px]"
+                    whileHover={{ boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)", scale: 1.3}}
+                    whileTap={{scale: 1}}
+                  >
                     home
-                  </h1>
+                  </motion.h1>
                 </Link>
 
                 {/* works */}
                 <Link href={'/'}>
-                  <h1>
+                  <motion.h1
+                    className="rounded-xl w-[120px]"
+                    whileHover={{ boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)", scale: 1.3}}
+                    whileTap={{scale: 1}}
+                  >
                     works
-                  </h1>
+                  </motion.h1>
                 </Link>
 
                 {/* project */}
                 <Link href={'/'}>
-                  <h1>
+                  <motion.h1
+                    className="rounded-xl w-[120px]"
+                    whileHover={{ boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)", scale: 1.3}}
+                    whileTap={{scale: 1}}
+                  >
                     project
-                  </h1>
+                  </motion.h1>
                 </Link>
                 
                 {/* contact */}
                 <Link href={'/'}>
-                  <h1>
+                  <motion.h1
+                    className="rounded-xl w-[120px]"
+                    whileHover={{ boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)", scale: 1.3}}
+                    whileTap={{scale: 1}}
+                  >
                     contact
-                  </h1>
+                  </motion.h1>
                 </Link>
               </ul>
             </motion.div>
