@@ -1,7 +1,7 @@
 "use client"
 
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 import Link from 'next/link';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -18,9 +18,10 @@ const SideNavigation = () => {
   const menuVariants = {
     open: { x: 0 },
     closed: { x: '50%' }, // Start the menu outside the viewport on the right side
+    exit: {x: "100%", transition: {type: 'spring', stiffness: 250, damping: 10}}
   };
 
-  const transition = { type: 'spring', stiffness: 250, damping: 10 };
+  const transition = { type: 'spring', stiffness: 250, damping: 5 };
   
   return (
     <section className='border'>
@@ -38,11 +39,14 @@ const SideNavigation = () => {
         </div>
 
         {/* open hamburger */}
-        <motion.div 
+        <AnimatePresence mode='popLayout'> 
+          {isOpen && 
+          <motion.div 
           className={`justify-start items-end h-[60vh] bg-white ${isOpen ? "flex" : "hidden"} relative`}
           variants={menuVariants}
           initial="closed"
           animate={isOpen ? "open" : "closed"} // Animate the content
+          exit="exit"
           transition={transition}
         >
 
@@ -112,7 +116,8 @@ const SideNavigation = () => {
               </Link>
             </motion.button>
           </div>
-        </motion.div>
+        </motion.div>}
+        </AnimatePresence>
       </div>
     </section>
   );
