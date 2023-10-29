@@ -1,6 +1,7 @@
-import ComponentsContainer from '@/components/common/stylesMain/ComponentsContainer'
-import MainTitle from '@/components/common/stylesMain/MainTitle'
-import IconSideNav from '@/components/ui/IconSideNav'
+import ComponentsContainer from '@/components/ui/stylesMain/ComponentsContainer'
+import MainTitle from '@/components/ui/stylesMain/MainTitle'
+import HamburgerNavigation from '@/components/ui/HamburgerNavigation'
+import SideNavigation from '@/components/ui/SideNavigation'
 import React from 'react'
 
 const page = () => {
@@ -9,10 +10,10 @@ const page = () => {
       <div className='px-[20px]'>
         <div className='py-[30px]'>
           <MainTitle title={'components'} mainTitle={'navigation'}/>
-          <ComponentsContainer component={<IconSideNav />}/>
+          <ComponentsContainer component={<SideNavigation />} componentName={'Side Navigation'}/>
         </div>
         <div className='py-[30px]'>
-          <ComponentsContainer component={<IconSideNav />}/>
+          <ComponentsContainer component={<HamburgerNavigation />} componentName={'Hamburger Navigation'}/>
         </div>
       </div>
       

@@ -26,7 +26,7 @@ const HamburgerNavigation = () => {
   
   return (
     <section>
-      <div className='bg-fuchsia-700 h-[60vh] flex justify-center items-center '>
+      <div className='bg-fuchsia-700 h-[60vh] flex justify-center items-center'>
 
         {/* hamburger button */}
         <motion.button

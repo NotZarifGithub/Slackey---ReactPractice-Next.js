@@ -47,18 +47,22 @@ const Navbar = () => {
   
   return (
     <header>
-      <section className="flex items-center py-[20px] justify-between px-[30px] md:bg-white fixed w-full">
+      <section className="flex items-center py-[20px] justify-between px-[30px] md:bg-white w-full">
         
         {/* navlinks */}
         <div className="flex-row hidden gap-2 md:flex ">
           {navlinks.map((item, index) => (
             <Link key={index} href={item.path} className="flex items-center gap-1 hover:text-[#3d205c]"> 
-              <motion.h1 className={`text-base font-semibold capitalize`}>
-                {item.title}
-              </motion.h1>
-              <motion.div
-                whileHover={{rotate: 180, y: 3}}
-              >
+              <AnimatePresence mode="wait">
+                <motion.h1 
+                  className={`text-base font-semibold capitalize`} 
+                  whileHover={{rotate: 180, y: 3, transition: {type: "tween"}}}
+                  exit={{rotate: 180, y: 3, transition: {type: "tween"}}}
+                >
+                  {item.title}
+                </motion.h1>                
+              </AnimatePresence>
+              <motion.div>
                 
                 {/* arrow logo for "more" link */}
                 <IoIosArrowDown className={` ${index === 3 ? "inline-block" : "hidden"} text-sm`}/>  
@@ -79,7 +83,7 @@ const Navbar = () => {
 
           <div className="flex flex-row items-center gap-4">
             {/* sign in */}
-            <Link href={'/'}>
+            <Link href={'/'} className="">
               <h1 className="text-base font-semibold capitalize hover:text-[#3d205c]">
                 sign in
               </h1>
