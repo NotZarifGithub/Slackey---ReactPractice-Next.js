@@ -8,7 +8,7 @@ const ComponentsContainer = ({component, componentName}) => {
           
           {/* style title */}
           <div>
-            <h1 className='text-xl font-semibold capitalize'>
+            <h1 className='text-base font-semibold capitalize md:text-xl'>
               {componentName}
             </h1>
           </div>
