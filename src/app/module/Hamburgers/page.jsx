@@ -1,5 +1,5 @@
 import ComponentsContainer from "@/components/modules/stylesMain/ComponentsContainer"
-import SideNavigation from "@/components/modules/component/navbar/SideNavigation"
+import SideNavigation from "@/components/modules/component/hamburger/SideNavigation"
 import HamburgerNavigation from "@/components/modules/component/hamburger/HamburgerNavigation"
 import MainTitle from "@/components/modules/stylesMain/MainTitle"
 
