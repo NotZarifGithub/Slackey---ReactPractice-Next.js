@@ -3,6 +3,7 @@ import Example from '@/components/mainPage/Example'
 import styles from './styles.module.css'
 import Hero from '@/components/mainPage/Hero'
 import ModulePage from '@/components/modules/ModulePage'
+import PricingPage from '@/components/pricing/PricingPage'
 
 export default function Home() {
 
@@ -27,6 +28,10 @@ export default function Home() {
         <ModulePage />
       </section>
 
+      {/* pricing page */}
+      <section>
+        <PricingPage />
+      </section>
     </main>
   )
 }
