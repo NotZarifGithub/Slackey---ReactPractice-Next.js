@@ -5,19 +5,19 @@ import Button from "../ui/Button"
 
 const Hero = () => {
   return (
-    <div className='flex flex-col items-center justify-center gap-3 max-w-[600px] mx-auto z-10'>
+    <section className='flex flex-col items-center justify-center gap-3 max-w-[650px] mx-auto z-10 px-[20px]'>
       <div className='bg-gradient-to-r from-[#3d205c] to-purple-400 px-[10px] py-[2px] rounded-lg'>
         <h2 className='font-bold text-white'>
           simplify your development experience
         </h2>
       </div>
       <div className=''>
-        <h1 className='text-6xl font-black '>
+        <h1 className='text-5xl font-black md:text-6xl '>
           Dynamic and Animated UI Components for <span className='bg-gradient-to-r from-[#3d205c] via-purple-400 to-[#3d205c] text-transparent bg-clip-text'>React and Tailwind CSS</span>
         </h1>  
       </div>
       <div>
-        <p className='text-xl'>
+        <p className='text-lg md:text-xl'>
           Engaging, Interactive, and Animated UI Elements for <span className='font-bold'> React</span> , <span className='font-bold'>Tailwind CSS</span> , <span className='font-bold'>Framer Motion</span>, and Beyond. Seamlessly integrate them into your code with just a couple of clicks.
         </p>
       </div>
@@ -31,7 +31,7 @@ const Hero = () => {
           <Button text={'buy now'}/>
         </Link>
       </div>
-    </div>
+    </section>
   )
 }
 

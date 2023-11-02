@@ -5,8 +5,9 @@ import {RxHamburgerMenu} from "react-icons/rx"
 import {IoIosArrowDown} from "react-icons/io"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Button from "../ui/Button"
+import { usePathname } from "next/navigation"
 
 const Navbar = () => {
 
@@ -44,10 +45,35 @@ const Navbar = () => {
   }
   
   const [isActive, setIsActive] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+  
+  // get path to have a customized navbar
+  const pathname = usePathname()
+  const isPathHome = () => {
+    return pathname === "/"
+  }
+
+  console.log(isPathHome())
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, []);
   
   return (
-    <header>
-      <section className="flex items-center py-[20px] justify-between px-[30px] md:bg-white w-full">
+    <header className={`sticky top-0 z-10 ${isPathHome() ? "bg-[transparent] " : 'bg-white border-b shadow-sm '}`}>
+      <section className={`flex items-center py-[20px] justify-between px-[20px] w-full ${isScrolled && isPathHome() ? "border-b shadow-sm bg-white transition duration-300" : ''}`}>
         
         {/* navlinks */}
         <div className="flex-row hidden gap-2 md:flex ">
