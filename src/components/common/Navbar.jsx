@@ -53,8 +53,6 @@ const Navbar = () => {
     return pathname === "/"
   }
 
-  console.log(isPathHome())
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
