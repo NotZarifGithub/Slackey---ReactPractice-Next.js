@@ -10,7 +10,7 @@ const ModulePage = () => {
   ]
 
   return (
-    <main className="max-w-[1100px] mx-auto px-[20px] lg:px-0">
+    <main className="max-w-[1100px] mx-auto px-[20px] xl:px-0">
 
       {/* page info */}
       <section className="max-w-[700px] flex flex-col gap-5 py-[20px]">
