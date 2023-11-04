@@ -4,6 +4,7 @@ import styles from './styles.module.css'
 import Hero from '@/components/mainPage/Hero'
 import ModulePage from '@/components/modules/ModulePage'
 import PricingPage from '@/components/pricing/PricingPage'
+import Footer from '@/components/common/Footer'
 
 export default function Home() {
 
