@@ -29,7 +29,9 @@ const Example = () => {
         <h1 className='text-3xl font-semibold capitalize md:text-5xl '>
           it&apos;s pretty simple to use
         </h1>
-        <div className='flex text-xs font-medium md:text-xl'>
+
+        {/* description for large screen */}
+        <div className='hidden text-xs font-medium md:text-xl md:flex'>
           Unleash the power of code! Just hit the 
 
           {/* animation for "code" */}
@@ -41,6 +43,11 @@ const Example = () => {
             code
           </motion.div> 
           button to reveal the source code.
+        </div>
+
+        {/* description for small screen */}
+        <div className='flex text-xs font-medium md:text-xl md:hidden max-w-[250px] mx-auto'>
+          Unleash the power of code! Just hit the button to reveal the source code.
         </div>
       </div>
 

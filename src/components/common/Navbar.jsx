@@ -132,7 +132,7 @@ const Navbar = () => {
         <AnimatePresence mode="popLayout">
           {isActive && (
             <motion.div 
-              className=" absolute top-[56px] left-0 flex flex-col items-center justify-center w-screen h-[calc(100vh-56px)] md:hidden -z-10 gap-3"
+              className=" absolute bg-white top-[56px] left-0 flex flex-col items-center justify-center w-screen h-[calc(100vh-56px)] md:hidden -z-10 gap-3"
               variants={menuVariants}
               initial='initial'
               animate='animate'
