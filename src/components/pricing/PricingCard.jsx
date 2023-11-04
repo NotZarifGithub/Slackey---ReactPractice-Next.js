@@ -76,7 +76,7 @@ const PricingCard = () => {
             <BsCheckAll className="md:text-2xl"/>
           </div>
           <div className="text-sm font-semibold md:text-base text-black/70">
-            <span className="font-black text-black"> Ongoing Updates</span> --- We're committed to enhancing your creative journey. We regularly introduce fresh components, keeping you at the forefront of design and development trends.
+            <span className="font-black text-black"> Ongoing Updates</span> --- We&apos;re committed to enhancing your creative journey. We regularly introduce fresh components, keeping you at the forefront of design and development trends.
           </div>
         </div>
 
@@ -86,7 +86,7 @@ const PricingCard = () => {
             <BsCheckAll className="md:text-2xl"/>
           </div>
           <div className="text-sm font-semibold md:text-base text-black/70">
-            <span className="font-black text-black"> Priority Suggestions</span> --- As a subscriber, your voice matters. You can submit suggestions for new components, and we'll prioritize your ideas to meet your evolving needs.
+            <span className="font-black text-black"> Priority Suggestions</span> --- As a subscriber, your voice matters. You can submit suggestions for new components, and we&apos;ll prioritize your ideas to meet your evolving needs.
           </div>
         </div>
       </div>

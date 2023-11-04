@@ -27,7 +27,7 @@ const Example = () => {
       {/* title & desc */}
       <div className='flex flex-col gap-3 cursor-default'>
         <h1 className='text-3xl font-semibold capitalize md:text-5xl '>
-          it's pretty simple to use
+          it&apos;s pretty simple to use
         </h1>
         <div className='flex text-xs font-medium md:text-xl'>
           Unleash the power of code! Just hit the 
