@@ -1,8 +1,10 @@
-import React from 'react'
+import FaqPage from "@/components/faq/FaqPage"
 
 const page = () => {
   return (
-    <div>page</div>
+    <main>
+      <FaqPage />
+    </main>
   )
 }
 
