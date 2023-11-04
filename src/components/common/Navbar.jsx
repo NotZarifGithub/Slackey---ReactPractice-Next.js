@@ -70,7 +70,7 @@ const Navbar = () => {
   }, []);
   
   return (
-    <header className={`sticky top-0 z-10 ${isPathHome() ? "bg-[transparent] " : 'bg-white border-b shadow-sm '}`}>
+    <header className={`sticky top-0 z-20 ${isPathHome() ? "bg-[transparent] " : 'bg-white border-b shadow-sm '}`}>
       <section className={`flex items-center py-[20px] justify-between px-[20px] w-full ${isScrolled && isPathHome() ? "border-b shadow-sm bg-white transition duration-300" : ''}`}>
         
         {/* navlinks */}
