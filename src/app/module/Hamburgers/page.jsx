@@ -4,18 +4,20 @@ import HamburgerNavigation from "@/components/modules/component/hamburger/Hambur
 import MainTitle from "@/components/modules/stylesMain/MainTitle"
 
 const page = () => {
+  
   return (
     <main className='max-w-[1600px]'>
       <div className='px-[20px]'>
         <div>
           <MainTitle title={'components'} mainTitle={'Hamburgers'}/>
-          <ComponentsContainer component={<SideNavigation />} componentName={'Bouncy Side Hamburger'}/>
+          <ComponentsContainer component={<SideNavigation />} componentName={'Bouncy Side Hamburger'} />
         </div>
         <div className='py-[30px]'>
           <ComponentsContainer component={<HamburgerNavigation />} componentName={'Sliding Bottom Hamburger'}/>
         </div>
-      </div>
-      
+        <div className="overflow-hidden">
+        </div>   
+      </div>   
     </main>
   )
 }

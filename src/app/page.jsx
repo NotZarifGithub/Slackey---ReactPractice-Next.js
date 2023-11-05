@@ -33,6 +33,7 @@ export default function Home() {
       <section>
         <PricingPage />
       </section>
+      
     </main>
   )
 }
