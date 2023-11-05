@@ -13,6 +13,10 @@ const Navbar = () => {
 
   const navlinks = [
     {
+      title: "home",
+      path: "/",
+    },
+    {
       title: "module",
       path: "/module",
     },
@@ -132,7 +136,7 @@ const Navbar = () => {
         <AnimatePresence mode="popLayout">
           {isActive && (
             <motion.div 
-              className="absolute top-0 left-0 flex flex-col items-center justify-center w-screen h-screen gap-3 bg-white  md:hidden -z-10"
+              className="absolute top-0 left-0 flex flex-col items-center justify-center w-screen h-screen gap-3 bg-white md:hidden -z-10"
               variants={menuVariants}
               initial='initial'
               animate='animate'
