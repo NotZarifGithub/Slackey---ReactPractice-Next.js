@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight"
-import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs"
+import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight.ts"
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs.ts"
 
 import {AiOutlineEye} from "react-icons/ai"
 import {BsCode} from "react-icons/bs"

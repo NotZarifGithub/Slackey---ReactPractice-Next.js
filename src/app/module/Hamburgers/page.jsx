@@ -2,8 +2,6 @@ import ComponentsContainer from "@/components/modules/stylesMain/ComponentsConta
 import SideNavigation from "@/components/modules/component/hamburger/SideNavigation"
 import HamburgerNavigation from "@/components/modules/component/hamburger/HamburgerNavigation"
 import MainTitle from "@/components/modules/stylesMain/MainTitle"
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const page = () => {
   
