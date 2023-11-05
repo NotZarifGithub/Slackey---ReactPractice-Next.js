@@ -153,6 +153,7 @@ const Navbar = () => {
           )}
         </AnimatePresence>
       </section>
+      
     </header>
   )
 }
