@@ -139,7 +139,7 @@ const Navbar = () => {
               exit='exit'
             >
               {navlinks.map((item, index) => (
-                <Link key={index} href={item.path}>
+                <Link key={index} href={item.path} onClick={() => setIsActive(!isActive)}>
                   <h1 className="text-4xl font-semibold capitalize">
                     {item.title}
                   </h1>
