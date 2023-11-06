@@ -6,7 +6,7 @@ import {IoIosArrowDown} from "react-icons/io"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
-import Button from "../ui/Button"
+import Button from "../ui/components/Button"
 import { usePathname } from "next/navigation"
 
 const Navbar = () => {

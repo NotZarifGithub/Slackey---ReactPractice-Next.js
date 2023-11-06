@@ -1,7 +1,7 @@
 "use client"
 
 import {BsCheckAll} from "react-icons/bs"
-import Button from "../ui/Button"
+import Button from "../ui/components/Button"
 import { motion } from "framer-motion"
 
 const PricingCard = () => {

@@ -1,11 +1,14 @@
 "use client"
 
 import Link from "next/link"
-import Button from "../ui/Button"
+import Button from "../ui/components/Button"
+import { motion } from "framer-motion"
+import AnimatedSections from "../ui/animation/AnimatedSections"
 
 const Hero = () => {
   return (
-    <section className='flex flex-col items-center justify-center gap-3 max-w-[650px] mx-auto z-10 px-[20px]'>
+    <AnimatedSections >
+      <motion.section className='flex flex-col items-center justify-center gap-3 max-w-[650px] mx-auto z-10 px-[20px]'>
       <div className='bg-gradient-to-r from-[#3d205c] to-purple-400 px-[10px] py-[2px] rounded-lg'>
         <h2 className='font-bold text-white'>
           simplify your development experience
@@ -31,7 +34,8 @@ const Hero = () => {
           <Button text={'buy now'}/>
         </Link>
       </div>
-    </section>
+      </motion.section>
+    </AnimatedSections>    
   )
 }
 

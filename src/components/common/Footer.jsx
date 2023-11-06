@@ -7,7 +7,7 @@ import {AiOutlineTwitter} from "react-icons/ai"
 import {HiOutlineMail} from "react-icons/hi"
 import {GiAstronautHelmet} from "react-icons/gi"
 
-import Button from "../ui/Button"
+import Button from "../ui/components/Button"
 import Link from "next/link"
 
 const Footer = () => {
