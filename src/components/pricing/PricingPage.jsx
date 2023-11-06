@@ -5,7 +5,7 @@ import PricingCard from './PricingCard'
 
 const PricingPage = () => {
   return (
-    <section className='flex flex-col items-center md:justify-center text-start px-[20px] md:px-0 md:text-center gap-10 h-[calc(100vh-85px)] py-[40px]'>
+    <section className='flex flex-col px-[20px] py-[40px] items-center gap-10'>
 
       {/* title & desc */}
       <div className='flex flex-col max-w-[800px] gap-5 '>
