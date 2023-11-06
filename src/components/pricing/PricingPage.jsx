@@ -1,11 +1,12 @@
 "use client"
 
-import { motion } from 'framer-motion'
+import AnimatedSections from '../ui/animation/AnimatedSections'
 import PricingCard from './PricingCard'
 
 const PricingPage = () => {
   return (
-    <section className='flex flex-col px-[20px] py-[40px] items-center gap-10'>
+    <AnimatedSections > 
+      <section className='flex flex-col px-[20px] py-[40px] items-center gap-10'>
 
       {/* title & desc */}
       <div className='flex flex-col max-w-[800px] gap-5 '>
@@ -24,7 +25,8 @@ const PricingPage = () => {
       <div className='flex text-start '>
         <PricingCard />
       </div>
-    </section>
+      </section>
+    </AnimatedSections>
   )
 }
 

@@ -1,6 +1,9 @@
-  
+"use client"
+
 import ComponentPart from "@/components/modules/ComponentPart"
 import SectionPart from "@/components/modules/SectionPart"
+
+import AnimatedSections from "../ui/animation/AnimatedSections"
 
 const ModulePage = () => {
 
@@ -16,28 +19,36 @@ const ModulePage = () => {
       <section className="max-w-[700px] flex flex-col gap-5 py-[20px]">
 
         {/* title */}
-        <div>
-          <h1 className="text-4xl font-black capitalize">
-            all components available
-          </h1>
-        </div>
+        <AnimatedSections > 
+          <div>
+            <h1 className="text-4xl font-black capitalize">
+              all components available
+            </h1>
+          </div>
+        </AnimatedSections>        
 
         {/* description */}
-        <div>
-          <p className="text-lg leading-6">
-            {pageDescription}        
-          </p>
-        </div>
+        <AnimatedSections > 
+          <div>
+            <p className="text-lg leading-6">
+              {pageDescription}        
+            </p>
+          </div>
+        </AnimatedSections>
       </section>
 
       {/* list of components */}
       <section>
 
         {/* sections */}
-        <SectionPart />
+        <AnimatedSections > 
+          <SectionPart />
+        </AnimatedSections>
 
         {/* components */}
-        <ComponentPart />
+        <AnimatedSections > 
+          <ComponentPart />
+        </AnimatedSections>
       </section>
     </main>
   )
