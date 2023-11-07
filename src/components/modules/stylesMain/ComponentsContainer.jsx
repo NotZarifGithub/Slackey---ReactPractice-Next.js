@@ -50,7 +50,7 @@ const ComponentsContainer = ({component, componentName, codeSnippet}) => {
             </motion.button>
           </div>
         </div>
-        <div className={`${isActive ? "hidden" : ""}`}>
+        <div className={`${isActive ? "hidden" : ""} h-[60vh]`}>
           {component}
         </div>
 

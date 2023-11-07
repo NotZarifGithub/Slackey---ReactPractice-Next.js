@@ -72,7 +72,7 @@ const ComponentPart = () => {
       </div>
 
       {/* items */}
-      <div className="grid gap-5 md:grid-cols-4">               
+      <div className="grid gap-5 md:grid-cols-3 lg:grid-cols-4">               
         {cardDataCompoonents.map((item, index) => (
           <ComponentsCard key={index} logo={item.logo} component={item.title} path={item.path}/> 
         ))}       
