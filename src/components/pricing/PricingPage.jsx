@@ -6,7 +6,7 @@ import PricingCard from './PricingCard'
 const PricingPage = () => {
   return (
     <AnimatedSections > 
-      <section className='flex flex-col px-[20px] py-[40px] items-center gap-10'>
+      <section className='flex flex-col px-[20px] py-[40px] items-center gap-10 '>
 
       {/* title & desc */}
       <div className='flex flex-col max-w-[800px] gap-5 '>
