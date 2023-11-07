@@ -11,6 +11,7 @@ const OhStudioNavbar = () => {
     <section className='h-[60vh] justify-center items-start text-center flex bg-[#c08ae3]'>
 
       <div className="py-[20px]">
+        
         {/* navbar */}
         <div className='bg-[#f8f4f4] rounded-full p-[5px]'>
           <ul className='relative flex items-center justify-center gap-1 font-medium'>

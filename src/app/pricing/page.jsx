@@ -3,8 +3,10 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main>
-      <PricingPage />
+    <main className='xl:h-[calc(100vh-84px)]'>
+      <div>
+        <PricingPage />
+      </div>
     </main>
   )
 }
