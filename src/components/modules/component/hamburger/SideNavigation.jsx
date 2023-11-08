@@ -28,6 +28,7 @@ const SideNavigation = () => {
       <div className='h-[60vh] bg-amber-500'>
         <div className={`items-center justify-center h-[60vh] flex ${isOpen ? "hidden" : "flex"}`}>
           <motion.button 
+            aria-label='main button'
             className='text-2xl rounded-full bg-white p-[15px]' // Set initial animation state
             variants={variants}
             whileHover="open" // Add hover animation

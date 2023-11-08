@@ -100,9 +100,9 @@ const Footer = () => {
           <div className="flex flex-col items-center justify-center gap-2 text-center md:text-start md:items-start md:pr-[40px]">
             <GiAstronautHelmet className="text-3xl md:text-5xl"/>
             <div className="md:text-lg">
-              Made by <span className="italic font-bold text-black"><Link href={'/'}>@pat_mento</Link></span>
+              Made by <span className="italic font-bold "><Link href={'/'}>@pat_mento</Link></span>
             </div>
-            <div className="text-white/60 md:text-lg">
+            <div className="text-white md:text-lg">
               Components are copyrighted material, and their redistribution is prohibited without obtaining written permission.
             </div>
           </div>
@@ -116,7 +116,7 @@ const Footer = () => {
                 </h1>
                 <ul className="flex flex-col md:gap-2">
                   {mainItem.link.map((mainLinks, index) => (
-                    <Link key={index} href={mainLinks.path} className="flex items-center gap-2 font-medium text-white/80">
+                    <Link key={index} href={mainLinks.path} className="flex items-center gap-2 font-medium text-white">
                       {mainLinks.logo}
                       {mainLinks.title}
                     </Link>

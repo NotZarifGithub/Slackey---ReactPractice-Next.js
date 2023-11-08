@@ -98,7 +98,7 @@ const Navbar = () => {
         </div>
 
         {/* icon logo */}
-        <Link href={'/'}>
+        <Link href={'/'} aria-label="logo button link directed to home">
           <div className="text-4xl ">
             <GiAstronautHelmet />
           </div>
