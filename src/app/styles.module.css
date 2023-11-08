@@ -22,3 +22,18 @@
   top: 0px;
   opacity: 0.15;
 }
+
+.button_glow {
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.button_glow:hover {
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6);
+}

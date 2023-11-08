@@ -30,7 +30,7 @@ const Navbar = () => {
     },
     {
       title: "more",
-      path: "/",
+      path: "",
     },
   ]
 
@@ -90,11 +90,9 @@ const Navbar = () => {
                   {item.title}
                 </motion.h1>                
               </AnimatePresence>
-              <motion.div>
-                
-                {/* arrow logo for "more" link */}
-                <IoIosArrowDown className={` ${index === 3 ? "inline-block" : "hidden"} text-sm`}/>  
-              </motion.div>              
+              
+              {/* arrow logo for "more" link */}
+              <IoIosArrowDown className={` ${index === 4 ? "inline-block" : "hidden"} text-sm`}/>               
             </Link>
           ))}
         </div>
