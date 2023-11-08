@@ -25,7 +25,7 @@ const SideNavigation = () => {
   
   return (
     <section className='border'>
-      <div className='h-[60vh] bg-amber-500'>
+      <div className=' bg-amber-500'>
         <div className={`items-center justify-center h-[60vh] flex ${isOpen ? "hidden" : "flex"}`}>
           <motion.button 
             aria-label='main button'

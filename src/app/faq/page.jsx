@@ -1,4 +1,4 @@
-import FaqPage from "@/components/faq/FaqPage"
+import FaqPage from "@/components/modules/sections/faq/FaqPage"
 
 const page = () => {
   return (
