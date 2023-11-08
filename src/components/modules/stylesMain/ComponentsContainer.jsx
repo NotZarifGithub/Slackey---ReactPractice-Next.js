@@ -19,7 +19,7 @@ const ComponentsContainer = ({component, componentName, codeSnippet}) => {
           
           {/* style title */}
           <div>
-            <h1 className='text-base font-semibold capitalize md:text-xl'>
+            <h1 className='text-base font-semibold md:text-xl'>
               {componentName}
             </h1>
           </div>
