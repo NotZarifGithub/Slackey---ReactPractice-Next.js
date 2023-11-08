@@ -15,7 +15,7 @@ const ComponentsContainer = ({component, componentName, codeSnippet}) => {
   return (
     <section className="">
       <div className=''>
-      <div className='flex flex-row justify-between py-[20px]'>
+      <div className='flex flex-row justify-between py-[20px] '>
           
           {/* style title */}
           <div>
@@ -50,12 +50,12 @@ const ComponentsContainer = ({component, componentName, codeSnippet}) => {
             </motion.button>
           </div>
         </div>
-        <div className={`${isActive ? "hidden" : ""} h-[60vh]`}>
+        <div className={`${isActive ? "hidden" : ""} border border-black`}>
           {component}
         </div>
 
         {/* code snippet */}
-        <div className={`${isActive ? "" : "hidden"}`}>
+        <div className={`${isActive ? "" : "hidden"} border border-black`}>
           <SyntaxHighlighter language="javascript" style={dracula} showLineNumbers={true} showInlineLineNumbers ={true} customStyle={{height: "60vh"}}>
             {codeSnippet}
           </SyntaxHighlighter>
