@@ -13,7 +13,7 @@ const ComponentsContainer = ({component, componentName, codeSnippet}) => {
   const [isActive, setIsActive] = useState(false)
   
   return (
-    <section>
+    <section className="">
       <div className=''>
       <div className='flex flex-row justify-between py-[20px]'>
           

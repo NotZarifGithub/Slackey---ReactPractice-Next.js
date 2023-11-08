@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
 import {MdOutlineKeyboardArrowDown} from "react-icons/md"
-import AnimatedSections from "../ui/animation/AnimatedSections"
+import AnimatedSections from "../../../ui/animation/AnimatedSections"
 
 const FaqPage = () => {
 

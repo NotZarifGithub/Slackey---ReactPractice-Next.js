@@ -48,6 +48,10 @@ const Sidebar = () => {
         path: '/module/Navbars',
       },
       {
+        title: 'Carousels',
+        path: '/module/Carousels',
+      },
+      {
         title: 'Hamburgers',
         path: '/module/Hamburgers',
       },
