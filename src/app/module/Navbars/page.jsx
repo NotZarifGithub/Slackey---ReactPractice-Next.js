@@ -13,7 +13,7 @@ const page = () => {
           <MainTitle title={'components'} mainTitle={'Navbars'}/>
           <ComponentsContainer component={<OhStudioNavbar />} componentName={'[oh.studio] Navbar'} />
         </div>  
-        <div className="py-[30px]">
+        <div>
           <ComponentsContainer component={<KakaoWcopilotNavbar />} componentName={'[kakao-wcopilot.webflow.io] Navbar'} />
         </div>
       </div>   

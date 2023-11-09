@@ -1,5 +1,5 @@
 import {BsUnlock} from "react-icons/bs"
-import { color, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 const Button = ({text, lock}) => {
   return (

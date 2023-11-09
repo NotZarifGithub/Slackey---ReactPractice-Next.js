@@ -12,7 +12,7 @@ const page = () => {
           <MainTitle title={'components'} mainTitle={'Hamburgers'}/>
           <ComponentsContainer component={<SideNavigation />} componentName={'Bouncy Side Hamburger'} />
         </div>
-        <div className='py-[30px]'>
+        <div>
           <ComponentsContainer component={<HamburgerNavigation />} componentName={'Sliding Bottom Hamburger'}/>
         </div>  
       </div>   
