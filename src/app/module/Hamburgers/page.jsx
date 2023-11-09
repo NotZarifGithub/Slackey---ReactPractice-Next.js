@@ -14,9 +14,7 @@ const page = () => {
         </div>
         <div className='py-[30px]'>
           <ComponentsContainer component={<HamburgerNavigation />} componentName={'Sliding Bottom Hamburger'}/>
-        </div>
-        <div className="overflow-hidden">
-        </div>   
+        </div>  
       </div>   
     </main>
   )
