@@ -7,7 +7,7 @@ import Link from "next/link"
 import styles from '../../app/styles.module.css'
 import AnimatedSections from "@/components/ui/animation/AnimatedSections"
 
-const registerPage = () => {
+const RegisterPage = () => {
 
   const [data, setData] = useState({
     name: "",
@@ -132,4 +132,4 @@ const registerPage = () => {
   )
 }
 
-export default registerPage
+export default RegisterPage
