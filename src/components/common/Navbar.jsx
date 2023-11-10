@@ -109,7 +109,7 @@ const Navbar = () => {
 
           <div className="flex flex-row items-center gap-4">
             {/* sign in */}
-            <Link href={'/'} className="">
+            <Link href={'/register'} className="">
               <h1 className="text-base font-semibold capitalize hover:text-[#3d205c]">
                 sign in
               </h1>
